@@ -1,12 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 32
-    buildToolsVersion '30.0.3'
+    namespace 'com.github.cdflynn.android.checksample'
+    compileSdk 34
+    compileOptions { sourceCompatibility JavaVersion.VERSION_11; targetCompatibility JavaVersion.VERSION_11 }
     defaultConfig {
         applicationId "com.github.cdflynn.android.checksample"
         minSdkVersion 15
-        targetSdkVersion 32
+        targetSdkVersion 34
         versionCode 1
         versionName "1.0"
     }
